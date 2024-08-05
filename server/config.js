@@ -6,11 +6,9 @@ dotenv.config();
 import NodeGeocoder from 'node-geocoder';
 export const DATABASE= process.env.DATABASE_URL;
 
-// export const AWS_ACCESS_KEY_ID= "AKIAV6PDTFUCQBHKA7WF";
-//export const AWS_ACCESS_KEY_ID="AKIAQKPIL2CNS33QPWIJ";
+
 export const AWS_ACCESS_KEY_ID=process.env.AWS_ACCESS_KEY_ID;
-//export const AWS_SECRET_ACCESS_KEY_ID="mIZStev5kVHzeC1EZOu+jqmbilvz6ikDQZYoH2e/";
-//export const AWS_SECRET_ACCESS_KEY_ID="cTfHq8hIagYSQQ9V0hNQ02eorVf6rlzwxUxupvlN";
+
 export const AWS_SECRET_ACCESS_KEY_ID=process.env.AWS_SECRET_ACCESS_KEY_ID;
 
 export const EMAIL_FROM='aditya.dev746@gmail.com';
@@ -37,6 +35,6 @@ const options = {
 
 export const GOOGLE_GEOCODER = NodeGeocoder(options);
 
-//export const JWT_SECRET="WEIBIWEBVV3311ENCNWJNECJNWCNWC3131113DWCN";
+
 export const JWT_SECRET=process.env.JWT_SECRET;
 export const CLIENT_URL="http://localhost:3000";
