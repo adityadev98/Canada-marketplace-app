@@ -1,9 +1,10 @@
 import AWS from 'aws-sdk'
+
 import dotenv from 'dotenv';
 dotenv.config();
 
 import NodeGeocoder from 'node-geocoder';
-export const DATABASE="mongodb+srv://adityadev43:4kWO9wmvA1RUcyq4@mernaws-webapp1.3bxnj8h.mongodb.net/?retryWrites=true&w=majority&appName=mernaws-webapp1";
+export const DATABASE= process.env.DATABASE_URL;
 
 // export const AWS_ACCESS_KEY_ID= "AKIAV6PDTFUCQBHKA7WF";
 //export const AWS_ACCESS_KEY_ID="AKIAQKPIL2CNS33QPWIJ";
